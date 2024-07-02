@@ -5,7 +5,7 @@ wp post delete --allow-root $(wp post list --post_type='post' --format=ids --all
 
 #instalar idioma pt BR
 wp language core install pt_BR --allow-root
-wp language core activate pt_BR --allow-root
+wp site switch-language pt_BR --allow-root
 wp option update timezone_string "America/Sao_Paulo" --allow-root
 
 ### Install plugins from official repository
